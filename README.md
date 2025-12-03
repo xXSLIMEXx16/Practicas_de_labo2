@@ -1,4 +1,4 @@
-# 🚀 Proyecto de Ejemplo
+> **Operadores Aritmeticos**
 
 | Operador | Descripción | Ejemplo |
    :--- | :--- | :---:|
