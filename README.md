@@ -3,7 +3,7 @@
 Python es un lenguaje de programación de alto nivel, interpretado y de código abierto, conocido por su sintaxis clara y legible, lo que lo hace fácil de aprender y usar.
 
 > **Operadores Aritmeticos**
-> 
+
 | Operador | Descripción | Ejemplo |   |
    :--- | :--- | :---| :---:|
 |+  | Suma Aritmetica                | Ej: 1+10 = 11  |
@@ -16,7 +16,7 @@ Python es un lenguaje de programación de alto nivel, interpretado y de código 
 
 
 > **Operadores Relacionales**
-> 
+
 | Operador | Descripción | Uso  | |
 | :--- | :--- | :--- | :---
 |<  | Devuelve True si el operador de la izquierda es menos que el operador de la derecha| 3 < 12  Devuelve True
