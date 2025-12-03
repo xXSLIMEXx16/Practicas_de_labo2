@@ -69,6 +69,7 @@ Una cosa interesante sobre Py es que no necesitas especificar el tipo de datos q
 |.strip() | Elimina los espacios en blanco al inicio y al final de la cadena
 
 ##Listas
+
 Las listas son una de las estructuras de datos más fundamentales y flexibles de Py, y se puede considerar el equivalente a los arrays que se conoce de C, pero coon capacidades muy superiores.
 
 Sintaxis: Se define utilizando corchetes [ ] y sus elementos separados por comas
