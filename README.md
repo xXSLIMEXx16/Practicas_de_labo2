@@ -31,7 +31,7 @@ Python es un lenguaje de programación de alto nivel, interpretado y de código 
 | Operador  | Descripcion  | uso
 | :--- |:--- |:---:
 | and  | Devuelve True si ambos operadores son True | a and b
-| or | Devuekve True si algun operando es True | a or b
+| or | Devuelve True si algun operando es True | a or b
 | not | Devuelve True si algunos de la operandos es Flase | not a 
 
 > Print() y Input()
