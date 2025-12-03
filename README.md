@@ -4,7 +4,7 @@ Python es un lenguaje de programación de alto nivel, interpretado y de código 
 
 > **Operadores Aritmeticos**
 | Operador | Descripción | Ejemplo |
-   :--- | :--- | :---:|
+ |  :--- | :--- | :---:|
 |+  | Suma Aritmetica                | Ej: 1+10 = 11  |
 |-  | Resta entre operandos          | Ej: 10-1 = 9   |
 |* | Multiplicacion Entre operandos  | Ej: 10*2 = 20  |
