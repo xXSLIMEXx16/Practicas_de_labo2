@@ -132,7 +132,29 @@ La función range en Py se utliza para generar una secuencia de números. es com
 
 Ejemplo: Range( Inicio, Fin, Paso)
 
+##Conjuntos 
+Un Conjutno es una colección de elementos que se caracteriza por dos propiedades principales.
 
+`Elementos únicos:` un conjunto no puede contener elementos duplicados
+
+`No ordenados:` Los elementos no tienen un indice, y el orden en que se almacena no se mantiene. 
+
+Sintaxis: Se definen utilizando llaves { } o usando la función set( )
+
+
+
+> Operaciones Clave ( MATEMÁTICAS )
+
+|funciones | Descripción 
+|:--- |:---:
+|.union( ) | Union de los conjuntos
+|.intersection( ) | Intersección de los conjuntos
+|.difference( ) | Diferencia de los conjuntos
+|.symmetric_difference( ) | Diferencia simetrica de los conjuntos
+|.issubset( ) | Subconjunto de un conjunto --> Devuelve un booleano
+|.issuperset( ) |Superconjunto de un conjunto --> Devuelve un booleano
+|.add( ) | Añade un elemento al conjunto
+|.remove( ) | Elimina un elemento del conjunto
 
 
 
