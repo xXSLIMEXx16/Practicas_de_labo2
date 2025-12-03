@@ -90,6 +90,51 @@ Ejemplo:  Numeros = [1, 2, 3, 4, 5]
 |.clear()   | Borra todos los elemtos de una lista
 |.index()   | Obtiene el indice de un elemento
 
+## Condicionales 
+
+Los condicionales en Py son herramientas que te permiten controlar el flujo de ejecución de tu programa
+
+Ejemplo: 
+
+
+```
+Edad= 20
+if edad >= 18:
+  print('eres mayor de edad') 
+else:
+  print('eres menor de edad')
+```
+
+## Ciclo while 
+
+El ciclo While es una estructura de control que permite ejecutar un bloque de codigo repetidamente mientras una condicion sea verdadera.
+
+
+```
+Ejemplo
+
+while (condicíon):
+  #Bloque de codigo
+```
+## Clico For
+El ciclo for esta diseñado para ejecutar un bloque de código una vez por cada elemento de un objeto iterable.
+
+```
+Ejemplo
+
+For "Variable" in "Secuencia":
+  #Bloque de codigo
+```
+
+## Range
+
+La función range en Py se utliza para generar una secuencia de números. es comunmente utilizada en ciclos For para iterar un número especifico de veces
+
+Ejemplo: Range( Inicio, Fin, Paso)
+
+
+
+
 
 
 
