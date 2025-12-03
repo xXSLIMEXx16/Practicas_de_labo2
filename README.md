@@ -34,5 +34,17 @@ Python es un lenguaje de programación de alto nivel, interpretado y de código 
 | or | Devuekve True si algun operando es True | a or b
 | not | Devuelve True si algunos de la operandos es Flase | not a 
 
+> Print() y Input()
+
+
+*   `Función Print()` se utliza para mostrar datos o mensajes en la consola
+```
+ Print('Hola mundo') #Sale un Hola mundo por consola
+```
+*   `Función Input()`P}Permite al usuario indroduucir texto desde el teclado
+```
+ Nombre = input()
+```
+
 
 
