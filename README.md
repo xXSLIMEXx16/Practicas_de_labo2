@@ -60,6 +60,7 @@ Una cosa interesante sobre Py es que no necesitas especificar el tipo de datos q
 
 
 > Algunas funciones utiles para las variables
+
 | Funciones | Descripción |
 | :--- | :---:
 |lower()  | Convierte todos los caracteres en minúsculas
