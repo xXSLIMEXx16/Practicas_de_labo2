@@ -44,5 +44,28 @@ Python es un lenguaje de programación de alto nivel, interpretado y de código 
  Nombre = input()
 ```
 
+## Variables 
+Las variables en Py son como contenedores donde puedes almacenar datos.
+
+Ejemplo:
+
+```
+Nombre = 'Juan'
+Edad = 25
+Altura = 1.75
+Fecha_de_nacimiento = '25/05/2000' 
+```
+Una cosa interesante sobre Py es que no necesitas especificar el tipo de datos que contendra la variable
+
+
+
+> Algunas funciones utiles para las variables
+| Funciones | Descripción |
+| :--- | :---:
+|lower()  | Convierte todos los caracteres en minúsculas
+|upper()  | Convierte todos los caracteres en Mayúsculas
+| len()   | Devuelve el largo de la cadena
+|strip() | Elimina los espacios en blanco al inicio y al final de la cadena
+
 
 
