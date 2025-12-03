@@ -26,5 +26,13 @@ Python es un lenguaje de programación de alto nivel, interpretado y de código 
 | >= |  Devuelve True si el operando de la izquierda es mayor o igual a el de la derecha | 5 >= 25 Devuelve False
 | != | Devuelve True si ambos operandos no son iguales | 12 != 3 Devulve True
 
+> Operadores Logicos
+
+| Operador  | Descripcion  | uso
+| :--- |:--- |:---:
+| and  | Devuelve True si ambos operadores son True | a and b
+| or | Devuekve True si algun operando es True | a or b
+| not | Devuelve True si algunos de la operandos es Flase | not a 
+
 
 
