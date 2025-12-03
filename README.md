@@ -34,14 +34,14 @@ Python es un lenguaje de programación de alto nivel, interpretado y de código 
 | or | Devuelve True si algun operando es True | a or b
 | not | Devuelve True si algunos de la operandos es Flase | not a 
 
-> Print() y Input()
-*   `Función Print()` se utliza para mostrar datos o mensajes en la consola
+> Print( ) y Input( )
+*   `Función Print( )` se utliza para mostrar datos o mensajes en la consola
 ```
  Print('Hola mundo') #Sale un Hola mundo por consola
 ```
-*   `Función Input()`P}Permite al usuario indroduucir texto desde el teclado
+*   `Función Input( )`P}Permite al usuario indroduucir texto desde el teclado
 ```
- Nombre = input()
+ Nombre = input( )
 ```
 
 ## Variables 
@@ -63,10 +63,10 @@ Una cosa interesante sobre Py es que no necesitas especificar el tipo de datos q
 
 | Funciones | Descripción |
 | :--- | :---:
-|.lower()  | Convierte todos los caracteres en minúsculas
-|.upper()  | Convierte todos los caracteres en Mayúsculas
-|.len()   | Devuelve el largo de la cadena
-|.strip() | Elimina los espacios en blanco al inicio y al final de la cadena
+|.lower( )  | Convierte todos los caracteres en minúsculas
+|.upper( )  | Convierte todos los caracteres en Mayúsculas
+|.len( )   | Devuelve el largo de la cadena
+|.strip( ) | Elimina los espacios en blanco al inicio y al final de la cadena
 
 ## Listas
 
@@ -80,15 +80,15 @@ Ejemplo:  Numeros = [1, 2, 3, 4, 5]
 
 |Funciones  | Descripción 
 | :--- |:---:
-| .append() | Añade un elemeno al final de la lista
-|.remove()  | Elimina un elemento de la lista
-|.len()     | Para encontrar el largo de la cadena 
-| .extend() | Para extender los elementos de una lista a otra
-|.sort()    | Ordena una lista
-| .count()  | cuenta cuantas veces aparece un elemento 
-|.reverse() | Revierte el orden de una lista
-|.clear()   | Borra todos los elemtos de una lista
-|.index()   | Obtiene el indice de un elemento
+| .append( ) | Añade un elemeno al final de la lista
+|.remove( )  | Elimina un elemento de la lista
+|.len( )     | Para encontrar el largo de la cadena 
+| .extend( ) | Para extender los elementos de una lista a otra
+|.sort( )    | Ordena una lista
+| .count( )  | cuenta cuantas veces aparece un elemento 
+|.reverse( ) | Revierte el orden de una lista
+|.clear( )   | Borra todos los elemtos de una lista
+|.index( )   | Obtiene el indice de un elemento
 
 ## Condicionales 
 
