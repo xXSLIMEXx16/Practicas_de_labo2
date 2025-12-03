@@ -13,6 +13,7 @@
 * [Diccionarios](#diccionarios)
 * [Tuplas](#tuplas)
 * [Funciones](#funciones)
+* [Decoradores](#decoradores)
 
 ---
 ### Introducción a python
@@ -207,6 +208,23 @@ Ejemplo:  Tupla_un_elemento( "Manzana", )
 |.index( ) | Devuelve el índice de la primera aparicion de "x" en la tupla
 
 ## Funciones
+Una función es un bloque de código reutilizable que realiza una tarea especifica. puede definir una función una vez y luego llamarla tantas veces como sea necesario, lo que ayuda a mantener tu código limpio y organizado.
+`Sintaxis:` Definición de una función `def Nombre_de_mi_funcion():`. y para llamar a la función simplemente llamas su nombre seguido de parentesis ( )
+> Funciones con parámetros Arbitarios
+* A veces uno sabe de antemano cuántos parámetros necesitarás. Puedes usar *args para pasar un número arbitrario de argumentos posicionales y **kwargs para pasar un número arbitrario de argumentos nombrados.
+
+```
+Ejemplo *args
+def sumar_todos(*args):
+   return sum(args)
+```
+```
+Ejemplo **kwargs
+def mostrar_info(**kwargs)
+   for clave, valor in kwargs.items( ):
+      print(f'{ clave } : { valor } )
+```
+## Decoradores
 
 
 
