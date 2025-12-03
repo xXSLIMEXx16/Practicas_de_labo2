@@ -35,8 +35,6 @@ Python es un lenguaje de programación de alto nivel, interpretado y de código 
 | not | Devuelve True si algunos de la operandos es Flase | not a 
 
 > Print() y Input()
-
-
 *   `Función Print()` se utliza para mostrar datos o mensajes en la consola
 ```
  Print('Hola mundo') #Sale un Hola mundo por consola
