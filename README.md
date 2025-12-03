@@ -154,7 +154,8 @@ Sintaxis: Se definen utilizando llaves { } o usando la función set( )
 |.add( ) | Añade un elemento al conjunto
 |.remove( ) | Elimina un elemento del conjunto
 
-
+## Diccionarios
+Un diccionario es una colección desordenada, modificable e indexeada de ekementos. en lugar de usar indices númericos como las listas, los diccionarios usan claves únicas para acceder a sus valores 
 
 
 
