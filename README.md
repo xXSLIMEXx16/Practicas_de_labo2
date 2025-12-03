@@ -155,7 +155,25 @@ Sintaxis: Se definen utilizando llaves { } o usando la función set( )
 |.remove( ) | Elimina un elemento del conjunto
 
 ## Diccionarios
-Un diccionario es una colección desordenada, modificable e indexeada de ekementos. en lugar de usar indices númericos como las listas, los diccionarios usan claves únicas para acceder a sus valores 
+Un diccionario es una colección desordenada, modificable e indexeada de ekementos. en lugar de usar indices númericos como las listas, los diccionarios usan claves únicas para acceder a sus valores.
+
+```
+Ejemplo
+
+mi_diccionario = { "Clave = valor1"
+                   "clave2 = valor2"
+                   "clave3 = valor3"
+                 }
+```
+
+> Operaciones clave
+
+| Funciones   | Descripción 
+| :--- | :---:
+|.pop( ) | Elimina elementos del diccionario
+|.keys( ) | Devuelve una vista de tpdas las claves en el diccionario
+|.value( ) | Devuelve una vista de todos los valores en el diccionario
+|.items( ) | Devuelve una vista de todos los pares de Clave-Valor en el diccionario 
 
 
 
