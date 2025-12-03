@@ -225,6 +225,30 @@ def mostrar_info(**kwargs)
       print(f'{ clave } : { valor } )
 ```
 ## Decoradores
+Un decorador en Python es, en esencia, una función que toma otra función como argumento, le añade alguna funcionalidad, y devuelve una nueva función.
 
+`Propósito:` Es una manera práctica de modificar o mejorar el comportamiento de una función existente sin tener que cambiar su código interno.
+`Sintaxis:` Se aplica utilizando el símbolo @ seguido del nombre de la función decoradora, justo antes de la definición de la función que se va a decorar.
 
+```
+Ejemplo de Decorador
+def logger(func):
+    def wrapper(): # Función "envoltura" que añade la lógica extra
+        print(f"Ejecutando {func.__name__}") # Código ANTES
+        func()                                 # Llamada a la función original
+        print(f"{func.__name__} ejecutada")  # Código DESPUÉS
+    return wrapper
+
+@logger
+def saludar():
+    print("¡Hola, Mundo!")
+
+# Cuando llamas a saludar(), se ejecuta la función wrapper
+saludar() 
+# Salida:
+# Ejecutando saludar
+# ¡Hola, Mundo!
+# saludar ejecutada
+
+```
 
