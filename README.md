@@ -11,6 +11,7 @@
 
 
 > **Operadores Relacionales**
+
 | Operador | Descripción | Uso  | |
 | :--- | :--- | :--- | :---
 |<  | Devuelve True si el operador de la izquierda es menos que el operador de la derecha| 3 < 12  Devuelve True
