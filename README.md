@@ -174,6 +174,23 @@ mi_diccionario = { "Clave = valor1"
 |.keys( ) | Devuelve una vista de tpdas las claves en el diccionario
 |.value( ) | Devuelve una vista de todos los valores en el diccionario
 |.items( ) | Devuelve una vista de todos los pares de Clave-Valor en el diccionario 
+## Tuplas
+
+Una tupla es una colección ordenada de elementos que pueden contener (Números, cadenas, listas, etc.). la principal caracteristica de las tuplas es que son inmutables, es decir, una vez creadas no se pueden modificar (Añadir, eliminar o cambiar sus valores).
+
+`Sintaxis: `Mi_tupla = (1,2,3)
+Las tuplas se definen con parentesis ( ) y los elementos separados por comas.
+Para una tupla de un elemento, debes añadir una coma despues del elemento.
+Ejemplo:  Tupla_un_elemento( "Manzana", )
+
+> Metodos de tuplas
+
+|Metodos | Descripción |
+|:--- |:---:
+|.count( ) | Devuelve el numero de veces que "x" aparece en la tupla
+|.index( ) | Devuelve el índice de la primera aparicion de "x" en la tupla
+
+## Funciones
 
 
 
