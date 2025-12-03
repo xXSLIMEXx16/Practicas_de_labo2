@@ -1,4 +1,9 @@
+# PYTHON
+### Introducción a python
+Python es un lenguaje de programación de alto nivel, interpretado y de código abierto, conocido por su sintaxis clara y legible, lo que lo hace fácil de aprender y usar.
 
+> **Operadores Aritmeticos**
+> 
 | Operador | Descripción | Ejemplo |   |
    :--- | :--- | :---| :---:|
 |+  | Suma Aritmetica                | Ej: 1+10 = 11  |
@@ -11,7 +16,7 @@
 
 
 > **Operadores Relacionales**
-
+> 
 | Operador | Descripción | Uso  | |
 | :--- | :--- | :--- | :---
 |<  | Devuelve True si el operador de la izquierda es menos que el operador de la derecha| 3 < 12  Devuelve True
@@ -20,5 +25,6 @@
 | <= | Duvuelve True si el operador de la ezquierda es menos o igual al operador de la derecha | 3 <= 3 Duvuelve True
 | >= |  Devuelve True si el operando de la izquierda es mayor o igual a el de la derecha | 5 >= 25 Devuelve False
 | != | Devuelve True si ambos operandos no son iguales | 12 != 3 Devulve True
+
 
 
