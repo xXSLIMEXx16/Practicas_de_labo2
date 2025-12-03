@@ -17,8 +17,8 @@ Python es un lenguaje de programación de alto nivel, interpretado y de código 
 
 > **Operadores Relacionales**
 
-| Operador | Descripción | Uso  | |
-| :--- | :--- | :--- | :---
+| Operador | Descripción | Uso  | 
+| :--- | :--- | :--- | 
 |<  | Devuelve True si el operador de la izquierda es menos que el operador de la derecha| 3 < 12  Devuelve True
 |>  | Devuelve True si el operador de la izquierda es menor al operador de la derecha | 12 > 3 Devuelve True
 | == | Devulve True si ambos operadores son iguales | 3 == 6 Devuelve False
