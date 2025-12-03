@@ -63,10 +63,31 @@ Una cosa interesante sobre Py es que no necesitas especificar el tipo de datos q
 
 | Funciones | Descripción |
 | :--- | :---:
-|lower()  | Convierte todos los caracteres en minúsculas
-|upper()  | Convierte todos los caracteres en Mayúsculas
-| len()   | Devuelve el largo de la cadena
-|strip() | Elimina los espacios en blanco al inicio y al final de la cadena
+|.lower()  | Convierte todos los caracteres en minúsculas
+|.upper()  | Convierte todos los caracteres en Mayúsculas
+|.len()   | Devuelve el largo de la cadena
+|.strip() | Elimina los espacios en blanco al inicio y al final de la cadena
+
+##Listas
+Las listas son una de las estructuras de datos más fundamentales y flexibles de Py, y se puede considerar el equivalente a los arrays que se conoce de C, pero coon capacidades muy superiores.
+
+Sintaxis: Se define utilizando corchetes [] y sus elementos separados por comas
+Ejemplo:  Numeros = [1, 2, 3, 4, 5]
+
+> Algunas funciones utiles para las Listas
+
+|Funciones  | Descripción 
+| :--- |:---:
+| .append() | Añade un elemeno al final de la lista
+|.remove()  | Elimina un elemento de la lista
+|.len()     | Para encontrar el largo de la cadena 
+| .extend() | Para extender los elementos de una lista a otra
+|.sort()    | Ordena una lista
+| .count()  | cuenta cuantas veces aparece un elemento 
+|.reverse() | Revierte el orden de una lista
+|.clear()   | Borra todos los elemtos de una lista
+|.index()   | Obtiene el indice de un elemento
+
 
 
 
