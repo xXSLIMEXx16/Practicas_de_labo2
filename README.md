@@ -72,6 +72,7 @@ Una cosa interesante sobre Py es que no necesitas especificar el tipo de datos q
 Las listas son una de las estructuras de datos más fundamentales y flexibles de Py, y se puede considerar el equivalente a los arrays que se conoce de C, pero coon capacidades muy superiores.
 
 Sintaxis: Se define utilizando corchetes [ ] y sus elementos separados por comas
+
 Ejemplo:  Numeros = [1, 2, 3, 4, 5]
 
 > Algunas funciones utiles para las Listas
