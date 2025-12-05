@@ -14,7 +14,7 @@
 * [Tuplas](#tuplas)
 * [Funciones](#funciones)
 * [Decoradores](#decoradores)
-* [Clases y Objetos](#Clases_y_Objetos)
+* [Clases y Objetos](#Clases-y-Objetos)
 
 ---
 ### Introducción a python
