@@ -352,3 +352,16 @@ class Persona:
 Herencia es el mecanismo que permite a una clase tomar prestado atributos y métodos de otra clase. Esto nos permite crear nuevas clases basadas en otras ya existentes, lo que facilira la reutilización de código y la extension de funcionalidades. 
 
 <img src="images/imagen_ejemplo_herencia.png" alt="Ejemplo de Herencia" width="450"/>
+
+```python
+#EJEMPLO DE HERENCIA
+
+Class AutoDeportivo(Auto):
+   def __init__(self, marca, modelo, color, velocidad_maxima):
+      super().__init__(marca, modelo, color) #Heredamos los atributos de Auto
+      self.velocidad_maxima = velocidad_maxima #Añadimos un nuevo atributo
+   def mostrar_velocidad_maxima(self):
+      return f'El {self.marca} {self.modelo} tiene una velocidad máxima de {self.velocidad_maxima} km/h'
+```
+
+En este ejemplo. AutoDeportivo hereda de Auto, lo que significa que tiene todos los atributos y métodos de Auto, pero además le agregamos un nuevo atributo velocidad_maxima y un método adicional mostrar_velocidad_maxima().
