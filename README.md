@@ -393,3 +393,7 @@ class AutoElectrico(auto):
 tesla = AutoElectrico('tesla', 'modelo S', 'Negro', '100km/h')
 print(teska.arrancar())
 ```
+>ABSTRACCIÓN
+
+La abstracción en la Programación Orientada a Objetos (POO) significa enfocarse en las propiedades y comportamientos esenciales de un objeto, mientras se ocultan los detalles complejos o innecesarios que no son relevantes para el usuario. En otras palabras, abstraemos los detalles internos para que el usuario interactúa solo con lo necesario.
+
