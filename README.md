@@ -55,11 +55,11 @@ Python es un lenguaje de programación de alto nivel, interpretado y de código 
 
 > Print( ) y Input( )
 *   `Función Print( )` se utliza para mostrar datos o mensajes en la consola
-```
+```python
  Print('Hola mundo') #Sale un Hola mundo por consola
 ```
 *   `Función Input( )`P}Permite al usuario indroduucir texto desde el teclado
-```
+```python
  Nombre = input( )
 ```
 
@@ -68,7 +68,7 @@ Las variables en Py son como contenedores donde puedes almacenar datos.
 
 Ejemplo:
 
-```
+```python
 Nombre = 'Juan'
 Edad = 25
 Altura = 1.75
