@@ -314,7 +314,9 @@ La programación Orientada a Objetos (POO) es un paradigma que organiza el códi
 
 # Niveles de Protección
 **PÚBLICO:** Un atributo es público si su nombre no tiene guiones bajos al principio. Se puede acceder y modificar desde fuera de la clase.
+
 **PROTEGIDO:** Un atributo es protegido si su nombre comienza con un guion bajo (_). Se trata de una convención que indica que el atributo no dbería ser accedido directamente desde fuera de la clase, pero sigue accesible. Es más un aviso para los desarrolladores que una restricción real.
+
 **PRIVADO:** Un atributo es considerado privado si su nombre comienza con dos guiones bajos (__). Pyrhon lo "Renombra" internamente para hacerlo menos accesible desde fuera de la clase, pero aún puede ser accedido de forma indirecta.
 
 ```
