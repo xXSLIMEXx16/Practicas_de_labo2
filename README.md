@@ -365,3 +365,8 @@ Class AutoDeportivo(Auto):
 ```
 
 En este ejemplo. AutoDeportivo hereda de Auto, lo que significa que tiene todos los atributos y métodos de Auto, pero además le agregamos un nuevo atributo velocidad_maxima y un método adicional mostrar_velocidad_maxima().
+
+>POLIMORFISMO
+
+El polimorfismo en POO significa "Muchas formas". Es la capacidad que tienen los objetos de diferentes clases de ser tratados como si fueran de la misma clase base (común) y de responder de manera diferente a los mismos métodos. Dichos de otra menera, el mismo método o función puede comportarse de diferentes maneras según rl objeto que lo invoque.
+<img src="images/imagen_ejemplo_polimorfismo.png" alt="Ejemplo de Polimorfismo" width="450"/>
