@@ -334,7 +334,7 @@ El encapsulamiento consiste en agrupar datos y métodos dentro de una clase, y c
 
 ```python
 #EJEMPLO
-class Persona:
+class Auto:
    def __init__(self, marca, modelo, color):
       self._marca = marca #Atributo privado
       self._modelo = modelo #Atributo privado
@@ -397,3 +397,21 @@ print(teska.arrancar())
 
 La abstracción en la Programación Orientada a Objetos (POO) significa enfocarse en las propiedades y comportamientos esenciales de un objeto, mientras se ocultan los detalles complejos o innecesarios que no son relevantes para el usuario. En otras palabras, abstraemos los detalles internos para que el usuario interactúa solo con lo necesario.
 
+`Abstracción en el código`
+
+Volviendo a nuestro ejemplo del auto de Python, la abstraacción es que podemos arrancar o detener el auto con métodos simples (arrancar(), detenerse() ), sin tener que saber cómo esos metodos están imprimentados internamente.
+
+```python
+#EJEMPLO
+class Auto:
+   def __init__(self, marca, modelo, color):
+      self.marca = marca
+      self.modelo = modelo 
+      self.color = color
+#Este método "arrancar" oculta los detalles internos de cómo arrancar el auto
+   def arrancar(self):
+      return f'El {self.marca} {self.modelo} ha arrancado.'
+#Igualmente, "detenerse" es una abstracción de cómo se detiene el auto
+   def detenerse(self):
+      return f'El {self.marca} {self.modelo} se ha detenido.'
+```
