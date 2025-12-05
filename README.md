@@ -351,4 +351,4 @@ class Persona:
 
 Herencia es el mecanismo que permite a una clase tomar prestado atributos y métodos de otra clase. Esto nos permite crear nuevas clases basadas en otras ya existentes, lo que facilira la reutilización de código y la extension de funcionalidades. 
 
-![Ejemplo de Herencia](images/imagen_ejemplo_herencia.png)
+<img src="images/imagen_ejemplo_herencia.png" alt="Ejemplo de Herencia" width="600"/>
