@@ -15,6 +15,7 @@
 * [Funciones](#funciones)
 * [Decoradores](#decoradores)
 * [Clases y Objetos](#Clases-y-Objetos)
+* [Pilares de la POO](#Pilares-de-la-POO)
 
 ---
 ### Introducción a python
@@ -274,3 +275,34 @@ Class auto:
       self.color = color #Propiedad de la clase
 ```
 En este caso, el constructor recibe marca, modelo y color como páramentros y los asigna a la instancia del objeto.
+>Propiedades y atributos
+
+Los atributos don variables que pertenecen a la clase o a la instancia. En este ejemplo, **marca**, **modelo** y **color** son atributos de instancia, lo que significa que cada objeto Auto tendrá su propio valor de estos atributos.
+
+```
+Class auto:
+   def __init__(self, marca, modelo, color):
+      self.marca = marca 
+      self.modelo = modelo
+      self.color = color
+auto = auto('Toyota', 'corolla', rojo) #Creando una instancia de Auto
+pritn(auto1.marca)
+print(auto1.modelo)
+print(auto1.color)
+```
+>Métodos
+
+Los métodos son funciones que se definen dentro de una clase y que operan solo los objetos de esa clase. Todos los me}étodos de instancia incluyen **self** como primer parámetro, que representa la instancia actual. 
+
+```
+Class auto:
+   def __init__(self, marca, modelo, color):
+      self.marca = marca 
+      self.modelo = modelo
+      self.color = color
+   def arrancar(self):
+      print(f'el {self.marca} {self.modelo} está arrancando')
+   def detener(self):
+      print(f'el {self.marca} {self.modelo} está detenido')
+```
+## Pilares de la POO
