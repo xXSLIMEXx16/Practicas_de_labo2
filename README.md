@@ -415,3 +415,14 @@ class Auto:
    def detenerse(self):
       return f'El {self.marca} {self.modelo} se ha detenido.'
 ```
+`¿Qué pasa cuando usamos la abstracción?`
+
+Cuando creamos un objeto de la clase Auto y llamamos a los metodos arrancar() y detenerse(), no necesitamos saber cómo estos métodos funcionan por dentro.
+Solo nos importa que el auto "arranca" o "Se detiene":
+
+```python
+mi_auto = Auto('Toyota', 'corolla', 'rojo')
+print(mi_auto.arranca()) #El toyota corolla ha arrancado
+print(mi_auto.detenerse()) #El Toyota corolla se ha detenido
+```
+Lo único que el usuario de la clase necesi ta saber es que puede llamarse el método arrancar() para arrancar el auto. No le importa cómo el código realmente hace que el auto "arranque" internamente. Esto es abstracción: estamos exponiendo una funcionalidad clara y sencilla al usuario, mientras los detalles complicados se escondejn en el código.
