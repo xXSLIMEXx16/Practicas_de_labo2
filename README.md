@@ -261,4 +261,15 @@ Ejemplo:
          class auto:
                pass
 ```
+> El constructor
+El método **__init__** es el constructor de la clase.  se llama automaticamente cuando se crea una nueva instancia de la clase y generalmente se usa para inicializar las propiedades del objeto.
 
+```
+**Ejemplo**
+Class auto:
+   def __init__(self, marca, modelo, color):
+      self.marca = marca #Propiedad de la clase
+      self.modelo = modelo #Propiedad de la clase
+      self.color = color #Propiedad de la clase
+```
+En este caso, el constructor recibe marca, modelo y color como páramentros y los asigna a la instancia del objeto.
