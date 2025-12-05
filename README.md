@@ -313,6 +313,7 @@ La programación Orientada a Objetos (POO) es un paradigma que organiza el códi
 >Polimorfismo
 
 `Niveles de Protección`
+
 **PÚBLICO:** Un atributo es público si su nombre no tiene guiones bajos al principio. Se puede acceder y modificar desde fuera de la clase.
 
 **PROTEGIDO:** Un atributo es protegido si su nombre comienza con un guion bajo (_). Se trata de una convención que indica que el atributo no dbería ser accedido directamente desde fuera de la clase, pero sigue accesible. Es más un aviso para los desarrolladores que una restricción real.
