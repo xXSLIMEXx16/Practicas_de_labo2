@@ -255,3 +255,10 @@ saludar()
 ```
 ## Clases y Objetos
 Una clase es una plantilla o molde que define un tipo de objeto. pueden pensar en una clase como una descripcion general de un grupo de objetos que tienen propiedades y comportamientos similares.
+En python definimos una clase utilizando la palabra clave **Class**, seguida del nombre de la clase.
+```
+Ejemplo:
+         class auto:
+               pass
+```
+
