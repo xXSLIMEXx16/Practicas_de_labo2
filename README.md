@@ -14,6 +14,7 @@
 * [Tuplas](#tuplas)
 * [Funciones](#funciones)
 * [Decoradores](#decoradores)
+* [Clases y Objetos](#Clases_y_Objetos)
 
 ---
 ### Introducción a python
@@ -252,4 +253,4 @@ saludar()
 # saludar ejecutada
 
 ```
-
+## Clases y Objetos
