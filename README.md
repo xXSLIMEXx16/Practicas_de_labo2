@@ -116,7 +116,7 @@ Los condicionales en Py son herramientas que te permiten controlar el flujo de e
 Ejemplo: 
 
 
-```
+```python
 Edad= 20
 if edad >= 18:
   print('eres mayor de edad') 
@@ -129,7 +129,7 @@ else:
 El ciclo While es una estructura de control que permite ejecutar un bloque de codigo repetidamente mientras una condicion sea verdadera.
 
 
-```
+```python
 Ejemplo
 
 while (condicíon):
@@ -138,7 +138,7 @@ while (condicíon):
 ## Clico For
 El ciclo for esta diseñado para ejecutar un bloque de código una vez por cada elemento de un objeto iterable.
 
-```
+```python
 Ejemplo
 
 For "Variable" in "Secuencia":
@@ -176,7 +176,7 @@ Sintaxis: Se definen utilizando llaves { } o usando la función set( )
 ## Diccionarios
 Un diccionario es una colección desordenada, modificable e indexeada de ekementos. en lugar de usar indices númericos como las listas, los diccionarios usan claves únicas para acceder a sus valores.
 
-```
+```python
 Ejemplo
 
 mi_diccionario = { "Clave = valor1"
@@ -215,12 +215,12 @@ Una función es un bloque de código reutilizable que realiza una tarea especifi
 > Funciones con parámetros Arbitarios
 * A veces uno sabe de antemano cuántos parámetros necesitarás. Puedes usar *args para pasar un número arbitrario de argumentos posicionales y **kwargs para pasar un número arbitrario de argumentos nombrados.
 
-```
+```python
 Ejemplo *args
 def sumar_todos(*args):
    return sum(args)
 ```
-```
+```python
 Ejemplo **kwargs
 def mostrar_info(**kwargs)
    for clave, valor in kwargs.items( ):
@@ -233,7 +233,7 @@ Un decorador en Python es, en esencia, una función que toma otra función como 
 
 `Sintaxis:` Se aplica utilizando el símbolo @ seguido del nombre de la función decoradora, justo antes de la definición de la función que se va a decorar.
 
-```
+```python
 Ejemplo de Decorador
 def logger(func):
     def wrapper(): # Función "envoltura" que añade la lógica extra
@@ -257,7 +257,7 @@ saludar()
 ## Clases y Objetos
 Una clase es una plantilla o molde que define un tipo de objeto. pueden pensar en una clase como una descripcion general de un grupo de objetos que tienen propiedades y comportamientos similares.
 En python definimos una clase utilizando la palabra clave **Class**, seguida del nombre de la clase.
-```
+```python
 Ejemplo:
          class auto:
                pass
@@ -266,7 +266,7 @@ Ejemplo:
 
 El método **__init__** es el constructor de la clase.  se llama automaticamente cuando se crea una nueva instancia de la clase y generalmente se usa para inicializar las propiedades del objeto.
 
-```
+```python
 **Ejemplo**
 Class auto:
    def __init__(self, marca, modelo, color):
@@ -279,7 +279,7 @@ En este caso, el constructor recibe marca, modelo y color como páramentros y lo
 
 Los atributos don variables que pertenecen a la clase o a la instancia. En este ejemplo, **marca**, **modelo** y **color** son atributos de instancia, lo que significa que cada objeto Auto tendrá su propio valor de estos atributos.
 
-```
+```python
 Class auto:
    def __init__(self, marca, modelo, color):
       self.marca = marca 
@@ -294,7 +294,7 @@ print(auto1.color)
 
 Los métodos son funciones que se definen dentro de una clase y que operan solo los objetos de esa clase. Todos los me}étodos de instancia incluyen **self** como primer parámetro, que representa la instancia actual. 
 
-```
+```python
 Class auto:
    def __init__(self, marca, modelo, color):
       self.marca = marca 
