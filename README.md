@@ -331,3 +331,19 @@ class Persona:
 >ENCAPSULAMIENTO
 
 El encapsulamiento consiste en agrupar datos y métodos dentro de una clase, y controlar el acceso a ellos. En Python, podemos controlar el acceso de los atributos utilizando diferentes niveles de protección. Esto se hace principalmente para proteger los datos y prevenir que se modifiquen desde fuera de la clase sin control.
+
+```python
+#EJEMPLO
+class Persona:
+   def __init__(self, marca, modelo, color):
+      self._marca = marca #Atributo privado
+      self._modelo = modelo #Atributo privado
+      self._color = color #Atributo Privado
+   def arrancar(self):
+      return f'El {self._marca} {self._modelo} ha arrancado.'
+   def detenerse(self):
+      return f'El {self._marca} {self._modelo} se ha detenido.'
+   #METODO PARA CAMBIARL EL COLOR DEL AUTO
+   def cambiar_color(self, color_nuevo)
+      self._color = color_nuevo
+```
