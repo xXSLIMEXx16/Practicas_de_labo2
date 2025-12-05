@@ -262,6 +262,7 @@ Ejemplo:
                pass
 ```
 > El constructor
+
 El método **__init__** es el constructor de la clase.  se llama automaticamente cuando se crea una nueva instancia de la clase y generalmente se usa para inicializar las propiedades del objeto.
 
 ```
