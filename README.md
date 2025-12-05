@@ -347,3 +347,6 @@ class Persona:
    def cambiar_color(self, color_nuevo)
       self._color = color_nuevo
 ```
+>HERENCIA
+
+Herencia es el mecanismo que permite a una clase tomar prestado atributos y métodos de otra clase. Esto nos permite crear nuevas clases basadas en otras ya existentes, lo que facilira la reutilización de código y la extension de funcionalidades. 
