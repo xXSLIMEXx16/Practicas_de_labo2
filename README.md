@@ -320,7 +320,7 @@ La programación Orientada a Objetos (POO) es un paradigma que organiza el códi
 
 **PRIVADO:** Un atributo es considerado privado si su nombre comienza con dos guiones bajos (__). Pyrhon lo "Renombra" internamente para hacerlo menos accesible desde fuera de la clase, pero aún puede ser accedido de forma indirecta.
 
-```
+```python
 **EJEMPLO DE PROTECCIÓN**
 class Persona:
    def __init__(self, nombre, apellido, documento):
@@ -328,3 +328,6 @@ class Persona:
       self._apellido = apellido #Atributo protegido
       self.documento = documento #Atributo Público
 ```
+>ENCAPSULAMIENTO
+
+El encapsulamiento consiste en agrupar datos y métodos dentro de una clase, y controlar el acceso a ellos. En Python, podemos controlar el acceso de los atributos utilizando diferentes niveles de protección. Esto se hace principalmente para proteger los datos y prevenir que se modifiquen desde fuera de la clase sin control.
