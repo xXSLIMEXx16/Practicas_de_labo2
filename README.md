@@ -368,5 +368,28 @@ En este ejemplo. AutoDeportivo hereda de Auto, lo que significa que tiene todos 
 
 >POLIMORFISMO
 
-El polimorfismo en POO significa "Muchas formas". Es la capacidad que tienen los objetos de diferentes clases de ser tratados como si fueran de la misma clase base (común) y de responder de manera diferente a los mismos métodos. Dichos de otra menera, el mismo método o función puede comportarse de diferentes maneras según rl objeto que lo invoque.
+El polimorfismo en POO significa "Muchas formas". Es la capacidad que tienen los objetos de diferentes clases de ser tratados como si fueran de la misma clase base (común) y de responder de manera diferente a los mismos métodos. Dichos de otra menera, el mismo método o función puede comportarse de diferentes maneras según el objeto que lo invoque.
 <img src="images/imagen_ejemplo_polimorfismo.png" alt="Ejemplo de Polimorfismo" width="450"/>
+
+Esto es especialmente útil cuando trabajmos con herencia: las clases derivadas (hijas) pueden implementar sus propios comportamientos especificos para métodos que son definidos en una clase base (padre)
+
+```python
+
+class Auto:
+   def __init__(self, marca, modelo, color):
+      self.marca = marca 
+      self.modelo = modelo 
+      self.color = color 
+   def arrancar(self):
+      return f'El {self._marca} {self._modelo} ha arrancado.'
+class AutoElectrico(auto):
+   def __init__(self, marca,modelo,color,bateria):
+      super().__init__(marca, modelo, color): #Llamamos al constructor del auto
+      self.bateria = bateria #Añadimos un atributo especifico para el AutoElectrico
+   def arrancar(self):
+      return f'El {self.marca} {self.modelo} eléctrico ah arrancado silenciosamente.'
+
+#Crear un auto electrico
+tesla = AutoElectrico('tesla', 'modelo S', 'Negro', '100km/h')
+print(teska.arrancar())
+```
