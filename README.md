@@ -435,4 +435,52 @@ En Python, cuando hablamos de abstracción formal en términos de implementació
 
 * Métodos abstractos: Son métodos que se declaran en una clase abstracta pero no tienen implementación. Las subclases están obligadas a sobrescribirlos y darles una implementación concreta.
 
+Imaginemos que queremos hacer una clase base llamada Vehiculo. Este vehículo debe tener métodos abstractos como arrancar() y detenerse(), pero no queremos definir cómo funcionan, ya que eso dependerá del tipo específico de vehículo (un auto, una motocicleta, etc.). Entonces, las clases que hereden de Vehiculo deben implementar esos métodos.
+
+
+```python
+from abc import ABC, abstractmethod
+
+# 1. Clase Abstracta: No se puede instanciar directamente
+class Vehiculo(ABC):
+    
+    # Este es el constructor que todas las subclases también pueden usar
+    def __init__(self, marca):
+        self.marca = marca
+        
+    # 2. Método Abstracto: OBLIGA a las clases hijas a implementarlo
+    @abstractmethod
+    def arrancar(self):
+        pass # La implementación queda vacía
+        
+    # 3. Método normal: Tiene una implementación por defecto
+    def detenerse(self):
+        return f"El {self.marca} se ha detenido."
+
+# Clase Concreta que hereda de Vehiculo
+class Auto(Vehiculo):
+    
+    # OJO: Debe implementar arrancar()
+    def arrancar(self):
+        return f"El Auto {self.marca} ha encendido su motor a gasolina."
+
+# Clase Concreta que hereda de Vehiculo
+class MotoElectrica(Vehiculo):
+
+    # OJO: Debe implementar arrancar()
+    def arrancar(self):
+        return f"La Moto {self.marca} ha encendido silenciosamente su motor eléctrico."
+
+# Uso de las clases concretas
+mi_auto = Auto("Toyota")
+mi_moto = MotoElectrica("Zero")
+
+print(mi_auto.arrancar())
+print(mi_moto.arrancar())
+
+# Intenta crear un Vehiculo (dará TypeError)
+# vehiculo_generico = Vehiculo("Genérico")
+
+```
+
 
