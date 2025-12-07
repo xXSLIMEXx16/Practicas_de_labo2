@@ -60,7 +60,7 @@ Python es un lenguaje de programación de alto nivel, interpretado y de código 
 ```python
  Print('Hola mundo') #Sale un Hola mundo por consola
 ```
-*   `Función Input( )`P}Permite al usuario indroduucir texto desde el teclado
+*   `Función Input( )`Permite al usuario indroduucir texto desde el teclado
 ```python
  Nombre = input( )
 ```
@@ -584,6 +584,7 @@ Matplotlib es una Biblioteca de Python para crear gráficos estáticos, animados
 
  * `Interactividad`: Aunque originalmente diseñada para gráficos estáticos, Matplotlib también permite crear gráficos interactivos y animaciones.
 
+>Creación de un Gráfico Simple
 ```python
 #DATOS
 x = [1,2,3,4,5]
@@ -603,4 +604,67 @@ plt.show()
 
 ```
 
-<img src="images/imagen_ejemplo_grafica_tabla.png" alt="Ejemplo de Polimorfismo" width="450"/>
+<img src="images/imagen_ejemplo_grafica_tabla.png" alt="Ejemplo de Tabla" width="450"/>
+
+
+>Creación de un Gráfico de Barras
+
+```python
+#Datos
+categories = ['A','B','C','D']
+values = [4,7,1,8]
+
+#Crear el gráfico de barras
+plt.bar(categories, values)
+
+#Añadir titulo y etiquetas
+plt.title("Ejemplo de Gráficos de Barras")
+plt.xlabel("Categorias")
+plt.xlabel("Valores")
+
+#Mostrar el gráfico
+plt.show()
+
+```
+<img src="images/ejemplo_grafica_barras.png" alt="Ejemplo de Tabla Barra" width="450"/>
+
+>Creación de Gráfico de Histograma
+
+```python
+#Datos
+data = np.random.randn(1000)
+
+#Crear el Hisrograma
+plt.hist(data, bins=30)
+
+#Añadir titulo y etiquetas
+plt.title("Ejemplo de Histograma")
+plt.xlabel("Valor")
+plt.xlabel("Frecuencia")
+
+#Mostrar el gráfico
+plt.show()
+
+```
+<img src="images//imagen_ejemplo_grafico_histograma.png" alt="Ejemplo de Tabla Histograma" width="450"/>
+
+>Creación de Gráfico de Dispersión 
+
+```python
+#Datos
+x = np.random.rand(50)
+y = np.random.rand(50)
+
+#Crear el gráfico de dispersión
+plt.scatter(x, y)
+
+#Añadir titulo y etiquetas
+plt.title("Ejemplo de Gráfico de Dispersión")
+plt.xlabel("eje x")
+plt.xlabel("eje y")
+
+#Mostrar el gráfico
+plt.show()
+
+```
+<img src="images/ejemplo_grafico_dispersion.png" alt="Ejemplo de grafica de dispersión" width="450"/>
