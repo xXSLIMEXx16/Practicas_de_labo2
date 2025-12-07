@@ -16,7 +16,10 @@
 * [Decoradores](#decoradores)
 * [Clases y Objetos](#Clases-y-Objetos)
 * [Pilares de la POO](#Pilares-de-la-POO)
+* [NunPY Y Matplotlib](#NunPY-Y-Matplotlib)
 
+
+NunPY Y Matplotlib
 ---
 ### Introducción a python
 Python es un lenguaje de programación de alto nivel, interpretado y de código abierto, conocido por su sintaxis clara y legible, lo que lo hace fácil de aprender y usar.
@@ -484,7 +487,7 @@ print(mi_moto.arrancar())
 
 ```
 
-## NunPY Y PANDA
+## NunPY Y Matplotlib
 
 NumPy (Numerical Pythin) es una biblioteca de Python utilizada para realizar operaciones matemáticas y estadísticas con grandes conjuntos de datos.
 
