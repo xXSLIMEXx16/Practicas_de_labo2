@@ -369,6 +369,7 @@ En este ejemplo. AutoDeportivo hereda de Auto, lo que significa que tiene todos 
 >POLIMORFISMO
 
 El polimorfismo en POO significa "Muchas formas". Es la capacidad que tienen los objetos de diferentes clases de ser tratados como si fueran de la misma clase base (común) y de responder de manera diferente a los mismos métodos. Dichos de otra menera, el mismo método o función puede comportarse de diferentes maneras según el objeto que lo invoque.
+
 <img src="images/imagen_ejemplo_polimorfismo.png" alt="Ejemplo de Polimorfismo" width="450"/>
 
 Esto es especialmente útil cuando trabajmos con herencia: las clases derivadas (hijas) pueden implementar sus propios comportamientos especificos para métodos que son definidos en una clase base (padre)
@@ -483,4 +484,87 @@ print(mi_moto.arrancar())
 
 ```
 
-## NUMPY Y PANDA
+## NunPY Y PANDA
+
+NumPy (Numerical Pythin) es una biblioteca de Python utilizada para realizar operaciones matemáticas y estadísticas con grandes conjuntos de datos.
+
+>Características Principales
+
+ * `Arrays Multidimensionales`: NumPy introduce el objeto nderray, que es una matriz n-dimensiones, lo que permite almacenar y manipular datos de forma eficiente. 
+
+ * `Operaciones Matemáticas`: Ofrece funciones para realizar operaciones matemáticas elementales y avanzadas, como sumas, productos, transformaciones, etc. 
+
+ * `Funcionalidades de Algebra Lineal`: Incluye operaciones de álgebra lineal, como multiplicación de matrices, descomposición de matrices y resolución de sistemas de ecuaciones lineales.
+
+ * `Funciones Estaticas`: Proporciona funciones estaticas como media, mediana, desviación estandar, etc.
+
+ * `Integración con otras Bibliotecas`: NumPy se integra fácilmente con otras bibliotecas cientificas como Scipy, Matplotlib y pandas.
+
+
+`EJEMPLOS DE ARRAYS`
+
+Puedes eliminar elementos del diccionario usando el método pop( ) o la palabra clave del: 
+
+```python
+# Creando un Array de una de una dimesión 
+array_1d = np.array([1,2,3,4,5])
+
+# Creando un arrays de dos dimensione
+array_2d = np.array([1,2,3],[4,5,6])
+
+print('Array 1D:',array_1d)
+print('Array 2D:', array_2d)
+
+```
+
+>Operaciones Matemáticas Básicas
+
+```python
+#Suma de arrays
+array_sum = array_1d + array_1d
+
+#Producto de array
+array_product = array_1d * array_1d
+
+print('Suma: ',array_sum)
+print('Producto: ', array_product)
+
+```
+
+Se pueden utilizar funciones estadisticas
+
+```python
+#Calcular la media
+mean = np.mean(array_1d)
+
+#Calcular la desviación estándar
+std_dev = np.std(array_1d)
+
+print('Media:',mean)
+print('Desviación Estándar:',std_dev)
+
+```
+```python
+#Creando matrices
+matrix_a = np.array([[1,2],[3,4]])
+matrix_b = np.array([[5,6],[7,8]])
+
+#Multiplicación de matrices
+matrix_product = np.dot(matrix_a, matrix_b)
+
+print('Producto de maatrices: \n', matrix_product)
+
+```
+
+Selección de elementos
+
+```python
+#Accediendo a elementos de un array
+element= array_2d [0,1] #Elemento en la primera fila, segunda columna
+
+#Slincing de un array
+sub_array = array_2d[:,1] #Todas las filas, segunda columna 
+
+print("Elemento: ", element)
+print("Sub-array: ",sub_array)
+```
