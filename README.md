@@ -570,3 +570,37 @@ sub_array = array_2d[:,1] #Todas las filas, segunda columna
 print("Elemento: ", element)
 print("Sub-array: ",sub_array)
 ```
+
+## Matplotlib
+
+Matplotlib es una Biblioteca de Python para crear gráficos estáticos, animados e interactivos. Fue creada por john D. Hunter y es ampliamente utilizada en la comunidad cientíca y de analisis de datos debedi a su flixibilidad y potencia.
+
+>Características Principales
+ * `Gráficos 2D`: Permite la creación de una amplia vatiedad de gráficos en dos dimensiones, como lineas, barras, histogramas, dispersiones (scatter plots), y más.
+
+ * `Personalización`: Ofrece un alto grado de personalización para los gráficos, desde los colores y estilos de las líneas hasta los ejes y las etiquetas
+
+ * `Integración`: Se integra bien con otras bibliotecas de Python como NumPy, Pandas y AciPy, y puede trabajar con jupyter Notebooks para crear gráficos en linea.
+
+ * `Interactividad`: Aunque originalmente diseñada para gráficos estáticos, Matplotlib también permite crear gráficos interactivos y animaciones.
+
+```python
+#DATOS
+x = [1,2,3,4,5]
+y = [2,3,5,7,11]
+
+#Crear el Gráfico
+ plt.plot(x,y)
+
+ #Añadir título y etiquetas
+ plt.title("Ejemplo de Gráficos Simple")
+plt.xlabel("Eje x")
+plt.xlabel("Eje y")
+
+
+#Mostrar el gráfico
+plt.show()
+
+```
+
+<img src="images/imagen_ejemplo_grafica_tabla.png" alt="Ejemplo de Polimorfismo" width="450"/>
