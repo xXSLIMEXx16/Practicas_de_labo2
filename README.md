@@ -20,10 +20,10 @@
 
 
 ---
-### Introducción a C
+## Introducción a C
 
 ---
-### Introducción a python
+## Introducción a python
 Python es un lenguaje de programación de alto nivel, interpretado y de código abierto, conocido por su sintaxis clara y legible, lo que lo hace fácil de aprender y usar.
 
 > **Operadores Aritmeticos**
