@@ -7,7 +7,8 @@
 * [Arrays](#Arrays)
 * [Operadores Aritméticos](#Operadores-Aritméticos)
 * [Operadores lógicos](#Operadores-lógicos)
-
+* [Estructuras de control de flujo](Estructuras-de-control-de-flujo)
+* [Ciclos o Bucles](Ciclos-o-Bucles)
 
 # PYTHON
 
@@ -256,6 +257,110 @@ operacion *= 3;
 - *Negación* `!`
 	Niega una condición. Si es true, lo vuelve false y viciversa
 
+
+## Estructuras de control de flujo
+
+Las estructuras de control de flujo se utilizan para controlar el flujo de ejecución de un programa. En C, existen tres estructuras de control de flujo principales:
+
+**if-else**: se utiliza para ejecutar una sentencia si una condición es verdadera y otra sentencia si la condición es falsa.
+
+**while**: se utiliza para repetir una sentencia mientras una condición es verdadera.
+
+**for**: se utiliza para repetir una sentencia un número determinado de veces.
+
+
+
+## Sentencias `if` (Condicionales)
+
+Permiten comparar dos variables para ejecutar una acción determinada. La condición se cumple siempre y cuando la condición sea verdadera. 
+
+```cpp
+if (numero1 < numero2){
+    printf("Es menor\n");
+} else if (numero1==numero2){
+    printf("Son iguales"\n);
+} else {
+    printf("Es mayor" \n);
+}
+```
+
+## Operadores de Comparación
+
+- *Operador de comparación* `==`
+- *Distinto o diferente* `!=`
+- *Mayor que* `>`
+- *Mayor o igual que* `>=`
+- *Menor que* `<`
+- *Menor o igual que* `<=`
+
+Estos operadores son usamos en los condicionales y ciclos, donde comparamos dos valores para realizar una determinada acción.
+
+## Sentencia `switch`
+
+Es un tipo de condicional que dado un valor introducido los compara con los casos que tiene definido. Un ejemplo de switch en `C++` es el siguiente
+
+```cpp
+switch (c){
+    case 'a':
+    case 'e':
+    case 'i':
+    case 'o':
+    case 'u':	
+        printf("El una vocal.\n");
+        break;
+default:
+    printf("Es una consonante.\n");
+    break;
+}
+```
+
+## Ciclos o Bucles
+
+Estas estructuras nos permiten ejecutar bloques de códigos dada una condición.
+
+## Ciclo `while`
+
+Ejecuta las sentencia siempre que la condición sea verdadera. La expresión se verfica en cada inicio de la iteración.
+
+```cpp 
+int i = 0;
+while (i <= 5) {
+    printf("Valor de i: %d\n",i);
+    // Aumentamos el valor de la variable
+    i++;
+}
+```
+
+## Ciclo `do while`
+
+Ejecuta las sentencia siempre que la condición sea verdadera. La expresión se verfica en cada inicio de la iteración.
+
+```cpp 
+int i = 0;
+do {
+    printf("Valor de i: %d\n",i);
+    // Aumentamos el valor de la variable
+    i++;
+}while (i <= 5);
+```
+
+## Ciclo `for`
+
+El ciclo for ejecuta la primera expresión al iniciar el ciclo. Luego al inicio de cada iteración (Repetición) evalúa la segunda expresion y al final de cada iteración ejecuta la tercera expresion.
+
+```cpp 
+// Declaración de un array
+char array[5];
+array[0] = 'A';
+array[1] = 'B';
+array[2] = 'C';
+array[3] = 'D';
+array[4] = 'E';
+// Ciclo for
+for (int i = 0; i < sizeof(array) ; i++){
+    printf("%c\n",array[i]);
+}
+```
 
 
 ---
