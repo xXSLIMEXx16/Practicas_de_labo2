@@ -1,5 +1,4 @@
-# PYTHON
-
+# C/C++
 ## 📄 Índice
 
 * [Introducción a C](#introducción-a-C)
