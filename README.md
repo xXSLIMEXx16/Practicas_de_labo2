@@ -423,6 +423,61 @@ int main(){
     return 0;
 }
 ```
+### Pasaje de parámetros por valor
+```cpp
+int main(){
+    funcion();
+    funcion(12);
+    return 0;
+}
+```
+```cpp
+#include <stdio.h>
+
+// Definición de la función
+int suma(int a, int b)
+{
+    int result;
+    result=a+b;
+    return result;
+}
+
+int main()
+{
+    int a,b,c;
+    a=5;
+    b=1;
+    
+    // Llamada a la función
+    c=suma(a,b);
+
+    return 0;
+}
+```
+### Pasaje por dirección
+
+```cpp
+#include <stdio.h>
+
+// Definición de la función
+void suma(int *a, int *b)
+{
+    int result;
+    result=*a+*b;
+    printf("El resultado es: %d\n",result);
+}
+
+int main()
+{
+    int a,b;
+    a=5;
+    b=1;
+    // Llamada a la función
+    suma(&a,&b);
+
+    return 0;
+}
+```
 
 
 
