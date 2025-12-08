@@ -18,12 +18,144 @@
 * [Pilares de la POO](#Pilares-de-la-POO)
 * [NunPY Y Matplotlib](#NunPY-Y-Matplotlib)
 
-
 ---
 ## Introducción a C
 
+C++ es un lenguaje de programación, es uno de los más utilizados en todo el mundo. 
+Para programar en C++, se necesita un compilador y un editor.
+El **compilador** traduce el código fuente a código máquina (Código Binario), y el **editor** es el programa que nos colorea la sintaxis del lenguaje para poder escribir el código  cómodamente,
+
+Hay algunos programas que son compiladores y editores, se conocen como IDE (Entorno de desarrollo Integrado). por ejemplo.
+- CodeBlocks
+- Dev C++
+
+
+
+## Hola Mundo
+
+Primero, debemos crear un nuevo proyecto, y luego crear un archivo llamado **main.cpp**, o el nombre que se desee.
+Luego de eso, debemos incluir las librerías, que son un conjunto de código que viene predefinido y que nos facilita el trabajo.
+
+```cpp
+#include <stdio.h>
+int main(){
+    printf("Hola Mundo \n");
+    return 0;
+}
+```
+
+```cpp
+#include <iostream>
+int main(){
+    std::cout << "Hola Mundo" << std::endl;
+    return 0;
+}
+```
+
+Para ejecutar el programa usamor el botón de **Build and run**
+
+## Comentarios
+
+Son útiles para ordenar el código y explicar el código. Cuando se compila el programa, el compilador ignora estas líneas y nos las lee.
+
+```cpp 
+/**
+* Comentario multilínea
+*/
+// Comentario de una sola línea
+```
+
+## Operadores del Preprocesaor
+
+ Operador `include`
+
+Es un operador del preprocesador, el preprocesador es una parte del compilador que verifica qué librerías se están importando en el código fuente. (`#`).
+
+El operador `#include`, permite incluir librerías. Hay dos formas de incluir las librerías
+
+- `#include <iostream>` Busca los archivos en los recursos del compilador
+- `#include "iostream"` Busca los archivos en la propia carpeta
+
+*stdio.h* es la cabecera de la biblioteca "standard input-output header" que contien funciones declaradas como por ejemplo *printf*
+
+- **Biblioteca** llamada por vicio del lenguaje, **librería** Conjunto de herramientas que viene con código predefinido.
+
+
+## Variables y tipos de datos
+
+En C++, una variable es un espacio de memoria reservado para almacenar un valor. Las variables deben ser declaradas antes de su uso y se les asigna un tipo de datos. Los tipos de datos básicos en C son:
+
+**Entero**: para almacenar valores enteros, como -5, 0, 10, etc.
+
+**Flotante**: para almacenar números reales, como 3.14, 2.5, etc.
+
+**Carácter**: para almacenar caracteres, como 'a', 'b', etc.
+
+**Cadena de caracteres**: para almacenar una serie de caracteres, como "Hola mundo".
+
+**Booleano**: para almacenar valores verdadero o falso.
+
+> Variables enteras (`int`)
+
+**iostream** Es una librería que nos permite escribir y leer información por consola.
+```cpp
+#include <iostream>
+```
+
+Para declarar un variable en *C++¨*, debemos primero colocar el tipo de dato. Por ejemplo:
+```cpp
+int num = 31;
+// Otra forma de delcarar y asignar valor es
+int num{23};
+```
+
+> Variables `bool` y `char`
+
+- **char** Esta tipo de dato almacena caracteres
+- **bool** Este tipo de dato almacena valores booleanos (false o verdadero), `true` `false`
+
+> Variable de tipo `char`
+
+Si por ejemplo colocamos una palabra en una variable de tipo **char**, el compilador, sólo tomará un caracter. En este caso usamos *comillas simples*
+```cpp
+char letra = 'H';
+```
+
+Para mostrar varios caracteres usamos comillas dobles y colocamos un __`*`__, al final de la palabra reservada `char` .
+
+> Variable de tipo `bool`
+Es un tipo de variable lógico, 0 - 1, ó verdadero y falso.
+0 == false
+1 == true
+
+Para declarar una variable booleana, indicamos el tipo de dato `bool`
+```cpp
+bool variable = true; // false | true
+```
+
+
+> Variable de tipo `float`
+
+Son variables que guardar números de coma flotante de baja precisión, son como decimales que no tienen muchos decimales (No tiene tanto espacio en la memoria).
+
+En algunos casos, el compilador redondea el número a un valor superior o inferior.
+
+```cpp
+float num = 5.23478;
+```
+
+> Variable de tipo `double`
+
+Son tambien números de punto flotante que tienen más precisión ó espacio que memoria que los float. Funciona para números con más caracteres.
+```cpp
+double num = 12.3479835;
+```
+
+
+
+
 ---
-## Introducción a python
+### Introducción a python
 Python es un lenguaje de programación de alto nivel, interpretado y de código abierto, conocido por su sintaxis clara y legible, lo que lo hace fácil de aprender y usar.
 
 > **Operadores Aritmeticos**
