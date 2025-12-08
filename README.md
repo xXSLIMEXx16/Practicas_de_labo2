@@ -8,6 +8,8 @@
 * [Operadores lógicos](#Operadores-lógicos)
 * [Estructuras de control de flujo](#Estructuras-de-control-de-flujo)
 * [Ciclos o Bucles](#Ciclos-o-Bucles)
+* [Punteros](#Punteros)
+* [Funciones](#Funciones)
 
 # PYTHON
 
@@ -360,6 +362,69 @@ for (int i = 0; i < sizeof(array) ; i++){
     printf("%c\n",array[i]);
 }
 ```
+
+## Punteros
+
+Un puntero es una variable que en vez de guardar un valor, guarda la dirección de memoria donde está almacenado ese valor.
+
+O sea:
+👉 Una variable normal = guarda un dato
+👉 Un puntero = guarda dónde está ese dato
+
+```cpp 
+// EJEMPLO SIMPLE
+int numero = 10;
+int *p = &numero;
+```
+* `numero`→ vale 10
+
+* `&numero` → es la dirección de memoria donde está guardado ese 10
+
+* `p` → es un puntero que guarda esa dirección
+
+* `*p` → es “entrar a la casa”: acceder al valor guardado en esa dirección
+
+
+## Funciones
+Una función en C es un bloque de código que realiza una tarea específica y se puede llamar desde cualquier lugar del programa. Las funciones en C deben ser declaradas antes de su uso y se les asigna un tipo de retorno
+
+Las funciones son una manera de encapsular una funcionalidad que quieres reutilizar, de manera que puedes llamar esa función con un solo nombre, y no tendrás que escribir el código entero cada vez que la utilices.
+
+La declaración de una función en c++, va de la siguiente manera.
+*tipo-dato-devolver nombre-funcion(){ //Código a ejecutar  }*
+
+```cpp
+// Funcion suma
+int sumar(int a, int b){
+	return a+b;
+}
+// Funcion que no retorna nada
+void miFuncion(){
+	printf("Yo no retorno nada");
+}
+```
+
+Hay dos tipos de funciones
+- Las que no retornan valor `void`
+- Las que retornan un valor `int`, etc.
+
+También podemos definir parámetros por defecto a la función, de la siguiente manera.
+```cpp
+void funcion(int a = 10){
+    printf("%d",a+3);
+}
+```
+
+De esta manera, ya el valor de a tiene predefinido 10, sin embargo este valor puede ser cambiado al pasar por parámetro un nuevo valor en la llamada de la función.
+```cpp
+int main(){
+    funcion();
+    funcion(12);
+    return 0;
+}
+```
+
+
 
 
 ---
