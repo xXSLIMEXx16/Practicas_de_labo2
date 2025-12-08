@@ -2,6 +2,17 @@
 
 ## 📄 Índice
 
+* [Introducción a C](#introducción-a-C)
+* [Variables y tipos de datos](#Variables-y-tipos-de-datos)
+* [Arrays](#Arrays)
+* [Operadores Aritméticos](#Operadores-Aritméticos)
+* [Operadores lógicos](#Operadores-lógicos)
+
+
+# PYTHON
+
+## 📄 Índice
+
 * [Introducción a Python](#introducción-a-python)
 * [Variables](#variables)
 * [Listas](#listas)
@@ -31,7 +42,7 @@ Hay algunos programas que son compiladores y editores, se conocen como IDE (Ento
 
 
 
-## Hola Mundo
+> Hola Mundo
 
 Primero, debemos crear un nuevo proyecto, y luego crear un archivo llamado **main.cpp**, o el nombre que se desee.
 Luego de eso, debemos incluir las librerías, que son un conjunto de código que viene predefinido y que nos facilita el trabajo.
@@ -54,7 +65,7 @@ int main(){
 
 Para ejecutar el programa usamor el botón de **Build and run**
 
-## Comentarios
+> Comentarios
 
 Son útiles para ordenar el código y explicar el código. Cuando se compila el programa, el compilador ignora estas líneas y nos las lee.
 
@@ -65,7 +76,7 @@ Son útiles para ordenar el código y explicar el código. Cuando se compila el 
 // Comentario de una sola línea
 ```
 
-## Operadores del Preprocesaor
+> Operadores del Preprocesaor
 
  Operador `include`
 
@@ -150,7 +161,100 @@ Son tambien números de punto flotante que tienen más precisión ó espacio que
 ```cpp
 double num = 12.3479835;
 ```
+## Arrays 
 
+Son variables que tienen varias posiciones en memoria, lo que permiten almacenar más de un valor en una sóla referencia.
+
+Para declarar un arreglo, lo hacemos igual que en una variable, colocando al final corchetes angulares indicando el tamaño del arreglo. 
+
+```cpp
+// Arreglo de tipo entero con 5 posiciones
+int variable[5];
+```
+
+Para asignar valores al arreglo, debemos acceder a la posición y en ella colocar el valor que deseemos (Debe ser del mismo tipo de dato).
+```cpp
+// Asignamos un valor al arreglo, en la posición 0
+variable[0] = 12;
+``` 
+## Printf y Scanf
+
+```cpp
+#include <stdio.h>
+void main() 
+	{
+		int a=20;
+		float b = 5.23478;
+		
+		printf("El valor de a es %d\n",a);
+		printf("El valor de b es %f\n",b);
+	}
+```
+%c	Un único caracter
+%d	Un entero con signo, en base decimal
+%u	Un entero sin signo, en base decimal
+%o	Un entero en base octal
+%x	Un entero en base hexadecimal
+%e	Un número real en coma flotante, con exponente
+%f	Un número real en coma flotante, sin exponente
+%s	Una cadena de caracteres
+%p	Un puntero o dirección de memoria
+
+
+```cpp
+#include <stdio.h>
+void main()
+{
+	char a;
+	int b;
+	printf("Introduce un caracter: ");
+	scanf("%s",&a);
+	printf("Introduce un numero: ");
+	scanf("%d",&b);
+}
+```
+
+## Operadores Aritméticos
+
+Son los que nos permiten realizar operaciones matemáticas.
+
+```cpp
+int num1 = 2;
+int num2 = 6;
+int suma = num1 + num2;
+```
+
+- Suma `+`
+- Resta `-`
+- Multiplicación `*`
+- División `/`
+- Módulo (Residuo de la división) `%`
+
+
+## Operadores de Asignación
+
+El operador de asignación general es `=`. Exiten otros como:
+- **Asigna una suma** `+=` Suma un valor a la variable 
+- **Asigna una resta** `-=` Resta un valor a la variable
+- **Asigna una multiplicación** `*=` Resta un valor a la variable
+
+```cpp
+// Declaración;
+int operacion;
+// Asignación
+operacion = 12;
+// Operador de asignación
+operacion *= 3;
+``` 
+
+## Operadores lógicos
+
+- *and* `&&`
+	Si ambas condiciones se cumplen, retorna true
+- *or* `||`
+	Si alguna de las dos condiciones se cumple, retorna true.
+- *Negación* `!`
+	Niega una condición. Si es true, lo vuelve false y viciversa
 
 
 
