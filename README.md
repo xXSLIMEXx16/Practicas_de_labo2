@@ -7,8 +7,8 @@
 * [Arrays](#Arrays)
 * [Operadores Aritméticos](#Operadores-Aritméticos)
 * [Operadores lógicos](#Operadores-lógicos)
-* [Estructuras de control de flujo](Estructuras-de-control-de-flujo)
-* [Ciclos o Bucles](Ciclos-o-Bucles)
+* [Estructuras de control de flujo](#Estructuras-de-control-de-flujo)
+* [Ciclos o Bucles](#Ciclos-o-Bucles)
 
 # PYTHON
 
