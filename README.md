@@ -319,7 +319,7 @@ default:
 
 Estas estructuras nos permiten ejecutar bloques de códigos dada una condición.
 
-## Ciclo `while`
+## `while`
 
 Ejecuta las sentencia siempre que la condición sea verdadera. La expresión se verfica en cada inicio de la iteración.
 
@@ -332,7 +332,7 @@ while (i <= 5) {
 }
 ```
 
-## Ciclo `do while`
+## `do while`
 
 Ejecuta las sentencia siempre que la condición sea verdadera. La expresión se verfica en cada inicio de la iteración.
 
@@ -345,7 +345,7 @@ do {
 }while (i <= 5);
 ```
 
-## Ciclo `for`
+## `for`
 
 El ciclo for ejecuta la primera expresión al iniciar el ciclo. Luego al inicio de cada iteración (Repetición) evalúa la segunda expresion y al final de cada iteración ejecuta la tercera expresion.
 
@@ -424,13 +424,7 @@ int main(){
 }
 ```
 ### Pasaje de parámetros por valor
-```cpp
-int main(){
-    funcion();
-    funcion(12);
-    return 0;
-}
-```
+
 ```cpp
 #include <stdio.h>
 
