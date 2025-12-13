@@ -10,6 +10,7 @@
 * [Ciclos o Bucles](#Ciclos-o-Bucles)
 * [Punteros](#Punteros)
 * [Funciones](#Funciones)
+* [Vectores](#VECTORES)
 
 # PYTHON
 
@@ -32,7 +33,7 @@
 * [NunPY Y Matplotlib](#NunPY-Y-Matplotlib)
 
 ---
-## Introducción a C
+# Introducción a C
 
 C++ es un lenguaje de programación, es uno de los más utilizados en todo el mundo. 
 Para programar en C++, se necesita un compilador y un editor.
@@ -472,12 +473,68 @@ int main()
     return 0;
 }
 ```
+## VECTORES
+Un vector unidimensional es una estructura de datos que consiste en un conjunto ordenado de valores del mismo tipo, todos ellos almacenados en una sola dimensión y con un tamaño limitado predefinido.
 
+```cpp
+//EJEMPLO 
 
+#include <stdio.h>
+
+int main() {
+    int numeros[3]; // Declaración de un vector de 3 enteros
+
+    numeros[0] = 10; // Asignación al primer elemento (índice 0)
+    numeros[1] = 20; // Asignación al segundo elemento
+    numeros[2] = 30; // Asignación al tercer elemento
+
+    printf("El segundo elemento es: %d\n", numeros[1]); 
+    
+    return 0;
+}
+```
+
+## vectores con cadena de caracteres
+
+Las cadenas de caracteres son esencialmente vectores de tipo char en C. Es decir, una cadena es una secuencia contigua de caracteres en la memoria, con una regla crítica que la distingue: siempre debe terminar con el carácter nulo, o null terminator, representado como `\0`
+
+Este carácter `\0` es fundamental porque le indica a todas las funciones estándar de C (como `printf`, `strcpy`, `strlen`) dónde termina la cadena, ya que el compilador no almacena la longitud explícitamente.
+
+```cpp
+//Ejemplo de como asignarles 
+
+#include <stdio.h>
+
+int main() {
+    // 1. Declaramos un vector (buffer) de un tamaño conocido.
+    char frase_leida[100]; 
+
+    printf("Ingrese una frase larga (máximo 99 caracteres): \n");
+    
+    // 2. Uso de fgets():
+    //    - frase_leida: Dónde guardar.
+    //    - sizeof(frase_leida): El límite de 100, evitando desbordamiento.
+    //    - stdin: Leer desde el teclado.
+    fgets(frase_leida, sizeof(frase_leida), stdin); 
+    
+    printf("Usted escribió: %s", frase_leida);
+    
+    return 0;
+}
+
+```
+### Función <string.h>
+
+| FUNCION | OBJETIVO | RETORNA
+:--- | :--- | :---|
+| char strcpy(char *c1, const char *c2)| copia la cadeda apuntada por *c2 (Incluyendo caracter nulo) a la cadena apuntada por c1| La función retorna el valor de c1.
+|int strcmp(*c1 , *c2) | compara la cadena apuntada en c1 con la cadena apuntada por c2 |  La función retorna un numero mayor, igual o menor que cero, segun si la cadena apuntado por c1 es mayor, igual o menor que la cadena apuntada en por c2.
+|char *strcat(*c1, *c2) | Agrega una copia de la cadena puntada por c2 (incluye el caracter nulo) al final de la cadena apuntada por c1. El caracter inicial de c2 sobrescribe el carácter nulo al final de c1 | La función retorna el valor de c1.
+| int strlen(*c) | Calcula el número de caracteres de la cadena apuntada por c | La función retorna el número de caracteres hasta el carácter nulo, que no se incluye. 
 
 
 ---
-### Introducción a python
+# Introducción a python
 Python es un lenguaje de programación de alto nivel, interpretado y de código abierto, conocido por su sintaxis clara y legible, lo que lo hace fácil de aprender y usar.
 
 > **Operadores Aritmeticos**
