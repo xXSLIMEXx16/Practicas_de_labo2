@@ -11,6 +11,7 @@
 * [Punteros](#Punteros)
 * [Funciones](#Funciones)
 * [Vectores](#VECTORES)
+* [Estructuras](#ESTRUCTURAS)
 
 # PYTHON
 
@@ -531,6 +532,91 @@ int main() {
 |int strcmp(*c1 , *c2) | compara la cadena apuntada en c1 con la cadena apuntada por c2 |  La función retorna un numero mayor, igual o menor que cero, segun si la cadena apuntado por c1 es mayor, igual o menor que la cadena apuntada en por c2.
 |char *strcat(*c1, *c2) | Agrega una copia de la cadena puntada por c2 (incluye el caracter nulo) al final de la cadena apuntada por c1. El caracter inicial de c2 sobrescribe el carácter nulo al final de c1 | La función retorna el valor de c1.
 | int strlen(*c) | Calcula el número de caracteres de la cadena apuntada por c | La función retorna el número de caracteres hasta el carácter nulo, que no se incluye. 
+
+### ESTRUCTURAS
+
+
+Una estructura (`struct`) en C es un tipo de dato compuesto que te permite agrupar variables de diferentes tipos bajo un único nombre. Imagínalo como una ficha o registro personalizado que define la forma de un objeto complejo que no está predefinido en el lenguaje, como los datos de un estudiante o un punto en un plano.
+
+>Características Clave:
+* `Agrupación Heterogénea`: A diferencia de un vector, que solo puede almacenar elementos del mismo tipo, una estructura puede contener enteros (`int`), caracteres (`char`), punteros (`*`), o incluso otras estructuras.
+
+* `Molde (Template)`: La declaración de la estructura (`struct Nombre { ... };`) solo crea un molde o una plantilla; no reserva memoria. La memoria se reserva solo cuando declaras una variable de ese tipo de estructura.
+
+```cpp
+//EJEMPLO DE COMO USARLO
+#include <stdio.h>
+#define alumno 2
+
+// 1. Declaración de la estructura (el molde)
+struct Estudiante {
+    int id_registro;
+    char nombre[50];
+    float promedio;
+};
+
+int main() {
+    // 2. Declaración de una variable de tipo struct (reserva de memoria)
+    struct Estudiante [alumno];
+
+    // 3. Acceso y asignación de valores a los miembros usando el operador punto (.)
+    alumno1.id_registro = 101;
+    alumno1.promedio = 8.5;
+    strcpy(alumno1.nombre, "Ana Lopez"); // Recuerda usar strcpy para cadenas
+
+    printf("ID del estudiante: %d\n", alumno1.id_registro);
+    printf("Promedio de %s: %.2f\n", alumno1.nombre, alumno1.promedio);
+    
+    return 0;
+}
+
+```
+
+>Estructuras anidadas
+
+Las estructuras se pueden anidar (una estructura dentro de otra)
+```cpp
+// Estructura interna (debe definirse primero)
+struct Fecha {
+    int dia;
+    int mes;
+    int anio;
+};
+
+// Estructura externa (usa la interna como miembro)
+struct Empleado {
+    int id;
+    char nombre[50];
+    struct Fecha fecha_nacimiento; // ¡Aquí está el anidamiento!
+};
+
+int main() {
+    struct Empleado e1;
+    strcpy(e1.nombre, "Juan Perez");
+
+    // Para acceder al día, usamos el operador punto DOS VECES:
+    // e1.fecha_nacimiento  ->  .dia
+    e1.fecha_nacimiento.dia = 15;
+    e1.fecha_nacimiento.mes = 10;
+    e1.fecha_nacimiento.anio = 1985;
+
+    printf("Cumpleaños de %s: %d/%d/%d\n", 
+           e1.nombre, 
+           e1.fecha_nacimiento.dia, 
+           e1.fecha_nacimiento.mes, 
+           e1.fecha_nacimiento.anio);
+    return 0;
+}
+```
+
+>Estructuras con funciónes
+
+`por valor`
+* void cargar_por_valor(struct persona pablo){}
+
+`por dirección` 
+* void cargar_por_direccion(struct persona *ptr_pablo){}
+
 
 
 ---
