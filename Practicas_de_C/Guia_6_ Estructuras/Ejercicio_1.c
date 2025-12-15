@@ -4,7 +4,6 @@ estructura a una funci´on por valor que imprima los datos.*/
 
 #include <stdio.h>
 #include <string.h>
-void imprimir_datos(struct persona alumno);
 
 struct persona
 {
@@ -14,7 +13,7 @@ struct persona
    
 };
 
-
+void imprimir_datos(struct persona alumno);
 
 int main()
 {

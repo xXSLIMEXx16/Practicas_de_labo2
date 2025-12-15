@@ -1,12 +1,9 @@
-/*Agrega la funcionalidad para eliminar una persona del vector, solicitando al
-usuario que ingrese el ´ındice de la persona que desea eliminar.
-*/
+/*Crea un vector de estructuras para almacenar informaci´on de m´ultiples personas.
+Permite que el usuario ingrese los datos de varias personas y luego imprime la
+informaci´on almacenada.*/
 
 #include <stdio.h>
 #include <string.h>
-void agregar_datos(struct persona alumno[], int *tamano);
-void imprimir_datos(struct persona alumno[], int tamano);
-void eliminar_datos(struct persona alumno[], int *tamano);
 
 struct persona
 {
@@ -15,6 +12,9 @@ struct persona
    char Genero;
    
 };
+
+void agregar_datos(struct persona alumno[], int *tamano);
+void imprimir_datos(struct persona alumno[], int tamano);
 
 int main()
 {
@@ -35,15 +35,9 @@ int main()
         }
     
     } while (seguir);
-     
+    
 
     imprimir_datos(alumno, tamano);
-
-    eliminar_datos(alumno , &tamano);
-
-    imprimir_datos(alumno, tamano);
-
-
     return 0;
 }
 
@@ -76,33 +70,5 @@ void imprimir_datos(struct persona alumno[], int tamano){
         printf("Edad: %d\n",alumno[i].edad);
         printf("Genero: %c\n",alumno[i].Genero);
     }
-    return;
-}
-
-void eliminar_datos(struct persona alumno[], int *tamano){
-
-    fflush(stdin);
-
-    char nombre[50];
-    printf("Ingrese el nombre de la persona que quiere eliminar: ");
-    fgets(nombre, sizeof(nombre), stdin);
-    nombre[strcspn(nombre, "\n")]= '\0';
-
-    for (int i = 0; i < *tamano; i++)
-    {
-        if (strcmp(alumno[i].nombre, nombre) == 0)
-        {
-            for (int j = i; j < *tamano ; j++)
-            {
-                alumno[j] = alumno[ j +1];
-            }
-            
-            *tamano -= 1;
-
-            return;
-        }
-        
-    }
-    printf("La persona no existe en la base de datos...\n");
     return;
 }

@@ -3,13 +3,6 @@ y que imprima su informaci´on si se encuentra*/
 
 #include <stdio.h>
 #include <string.h>
-void agregar_datos(struct persona alumno[], int *tamano);
-void imprimir_datos(struct persona alumno[], int tamano);
-void eliminar_datos(struct persona alumno[], int *tamano);
-void ordenar_por_nombre(struct persona alumno[], int tamano);
-void ordenar_por_edad(struct persona alumno[], int tamano);
-void buscar_nombre(struct persona alumno[], int tamano);
-
 struct persona
 {
    char nombre[50];
@@ -17,6 +10,15 @@ struct persona
    char Genero;
    
 };
+
+
+void agregar_datos(struct persona alumno[], int *tamano);
+void imprimir_datos(struct persona alumno[], int tamano);
+void eliminar_datos(struct persona alumno[], int *tamano);
+void ordenar_por_nombre(struct persona alumno[], int tamano);
+void ordenar_por_edad(struct persona alumno[], int tamano);
+void buscar_nombre(struct persona alumno[], int tamano);
+
 
 int main()
 {

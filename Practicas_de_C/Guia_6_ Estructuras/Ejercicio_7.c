@@ -3,11 +3,6 @@ vector seg´un alg´un criterio (por ejemplo, nombre, edad, etc.).*/
 
 #include <stdio.h>
 #include <string.h>
-void agregar_datos(struct persona alumno[], int *tamano);
-void imprimir_datos(struct persona alumno[], int tamano);
-void eliminar_datos(struct persona alumno[], int *tamano);
-void ordenar_por_nombre(struct persona alumno[], int tamano);
-void ordenar_por_edad(struct persona alumno[], int tamano);
 
 struct persona
 {
@@ -16,6 +11,12 @@ struct persona
    char Genero;
    
 };
+
+void agregar_datos(struct persona alumno[], int *tamano);
+void imprimir_datos(struct persona alumno[], int tamano);
+void eliminar_datos(struct persona alumno[], int *tamano);
+void ordenar_por_nombre(struct persona alumno[], int tamano);
+void ordenar_por_edad(struct persona alumno[], int tamano);
 
 int main()
 {

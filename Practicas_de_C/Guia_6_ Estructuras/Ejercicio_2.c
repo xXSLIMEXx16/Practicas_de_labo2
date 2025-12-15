@@ -5,8 +5,6 @@ persona acepte un puntero a la estructura en lugar de la estructura misma.
 #include <stdio.h>
 #include <string.h>
 
-void imprimir_datos(struct persona *alumno);
-
 struct persona
 {
    char nombre[50];
@@ -15,7 +13,7 @@ struct persona
    
 };
 
-
+void imprimir_datos(struct persona *alumno);
 
 int main()
 {

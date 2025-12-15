@@ -4,7 +4,6 @@ de personas representadas por estructuras.
 
 #include <stdio.h>
 #include <string.h>
-void imprimir_datos(struct persona alumno[], int tamano);
 
 struct persona
 {
@@ -13,6 +12,9 @@ struct persona
    char Genero;
    
 };
+
+void imprimir_datos(struct persona alumno[], int tamano);
+
 
 int main()
 {
