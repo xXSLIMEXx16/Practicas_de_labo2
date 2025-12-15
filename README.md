@@ -12,9 +12,11 @@
 * [Funciones](#Funciones)
 * [Vectores](#VECTORES)
 * [Estructuras](#ESTRUCTURAS)
+* [Matrices](#MATRICES)
+
+
 
 # PYTHON
-
 ## 📄 Índice
 
 * [Introducción a Python](#introducción-a-python)
@@ -616,6 +618,115 @@ int main() {
 
 `por dirección` 
 * void cargar_por_direccion(struct persona *ptr_pablo){}
+
+## MATRICES
+
+Una matriz es una tabla de datos organizada en filas y columnas. Podés pensarla como un arreglo bidimensional.
+
+* En C, una matriz se declara así:
+
+```cpp
+int matriz[3][3];
+```
+Eso crea una matriz de 3 filas y 3 columnas.
+
+> Inicializar una matriz
+
+```cpp
+ int matriz[2][3] = {
+    {1, 2, 3},
+    {4, 5, 6}
+};
+```
+>Acceder a un elemento 
+* Se usa: matriz[fila][columna]
+```cpp
+printf("%d", matriz[0][1]); // Imprime 2
+```
+>Recorrer una matriz con bucles
+```cpp
+for (int i = 0; i < 2; i++) {
+    for (int j = 0; j < 3; j++) {
+        printf("%d ", matriz[i][j]);
+    }
+    printf("\n");
+}
+```
+Este patrón es clave:
+* `Primer` for → `filas`
+* `Segundo` for → `columnas`
+
+### Pasar una matriz a una función 
+
+En C, cuando pasás una matriz a una función, no se copia: se pasa la dirección de memoria.
+Pero hay una regla importante 👇
+
+👉 La cantidad de columnas debe estar definida.
+
+>Ejemplo basico 
+
+```cpp
+#include <stdio.h>
+
+void imprimir(int matriz[3][3]) {
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            printf("%d ", matriz[i][j]);
+        }
+        printf("\n");
+    }
+}
+
+int main() {
+    int m[3][3] = {
+        {1, 2, 3},
+        {4, 5, 6},
+        {7, 8, 9}
+    };
+
+    imprimir(m);
+    return 0;
+}
+```
+>La forma más usada y flexible
+```cpp
+void imprimir(int filas, int columnas, int matriz[filas][columnas]) {
+    for (int i = 0; i < filas; i++) {
+        for (int j = 0; j < columnas; j++) {
+            printf("%d ", matriz[i][j]);
+        }
+        printf("\n");
+    }
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
