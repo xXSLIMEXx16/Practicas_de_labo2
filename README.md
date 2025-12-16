@@ -13,6 +13,7 @@
 * [Vectores](#VECTORES)
 * [Estructuras](#ESTRUCTURAS)
 * [Matrices](#MATRICES)
+* [Memoria Dinámica](#MEMORIA-DINÁMICA)
 
 
 
@@ -699,6 +700,88 @@ void imprimir(int filas, int columnas, int matriz[filas][columnas]) {
     }
 }
 ```
+## MEMORIA DINÁMICA
+
+La memoria dinámica en C se refiere a la capacidad de asignar y liberar memoria durante la ejecución de un programa. A diferencia de la memoria estática, cuyo tamaño se determina en tiempo de compilación, la memoria dinámica te permite asignar y liberar memoria según sea necesario durante la ejecución del programa.
+
+>Funciones basicas para trabajar con memoria dinámica 
+
+* Incluir la libreria `<stdlib.h>` para acceder a las funciones de gestión de memoria. 
+
+| FUNCIÓN | DESCRIPCIÓN  |
+| :--- | :---:|
+| `malloc()`| Esta función se utiliza para asignar un bloque de un tamaño específico en bytes. Devuelve un puntero al inicio del bloque de memoria asignado.
+| `calloc()`| Similar a malloc( ), pero inicializa el bloque de memoria asignado en ceros, Útil para vectores y estructuras de datos.
+|`realloc()`| Se utiliza para cambiar el tamaño de un bloque de memoria ya asignado. Puede aumentar o disminuir el tamaño del bloque de memoria
+|`free()`| Libera un bloque de memoria previamente asignado. Es importante liberar la memoria cuando ya no se necesite para evitar fugas de memoria.
+
+
+>Sintaxis de `malloc()`– reservar memoria
+
+    
+```c
+//Reserva un bloque de memoria, pero NO lo inicializa.
+int *v = malloc(10 * sizeof(int));
+```
+✔ Reserva espacio para 10 enteros
+
+⚠ El contenido queda “basura” hasta que lo cargues
+
+>Sintaxis de `calloc()`– reservar e inicializa 
+
+```c
+//Hace lo mismo que malloc, pero inicializa todo en 0.
+int *v = calloc(10, sizeof(int));
+```
+✔ 10 enteros
+
+✔ Todos empiezan en 0
+
+👉 Ideal cuando no querés valores basura
+
+>Sintaxis de `realloc()`- redimensionar memoria
+
+```c
+//Cambia el tamaño de un bloque ya reservado.
+v = realloc(v, 20 * sizeof(int));
+```
+✔ Agranda o achica
+
+✔ Conserva los datos existentes (hasta donde entra)
+
+⚠ Siempre reasignar el puntero, porque puede cambiar de lugar
+
+>Sintaxis de `free()`– liberar memoria
+
+```c
+//Devuelve la memoria al sistema.
+free(v);
+v = NULL;
+```
+✔ Evita fugas de memoria
+
+✔ Ponerlo en NULL es una muy buena práctica
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
