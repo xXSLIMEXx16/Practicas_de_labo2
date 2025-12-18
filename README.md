@@ -762,21 +762,81 @@ v = NULL;
 
 ✔ Ponerlo en NULL es una muy buena práctica
 
+## Archivos de texto
+
+Un archivo de texto es un archivo que guarda información en caracteres legibles (ASCII), como `.txt`.
+
+En C se manejan mediante punteros a FILE y funciones de `<stdio.h>`.
+
+
+`stdio.h` nos ofrecen funciones para la entrada y salida estándar:
+
+Usando los dispositivos.
+Usando archivos.
+
+Para evitar la diferencia en las operaciones, stdio.h trata a ambos como archivos.
+Existen 3 identificadores especiales de tipo FILE *:
+
+- stdin (dispositivo de entrada, teclado)
+- stdout (dispositivo de salida, monitor)
+- stderr (dispositivo de salida de errores,monitor)
+
+
+>Modos de apertura en archivos de texto
+
+`r ó rt` : Apertura en modo sólo lectura, el archivo debe existir
+
+`w ó wt` : Apertura en modo escritura, si el archivo existe se sobreescribe y pierde el contenido anterior. Si no existe lo crea.
+
+`a ó at`  : Apertura en modo agregar, si el archivo existe agrega los datos al final del archivo, si no existe lo crea.
+
+`r+` : Apertura en modo lectura / escritura, el archivo debe existir.
+
+`w+` : Apertura en modo lectura / escritura, el archivo debe existir, si el archivo existe se sobrescribe y pierde el contenido anterior. Si no existe lo crea.
+
+`a+` : Apertura en modo lectura / agregar, si el archivo existe agrega los datos al final del archivo, si no existe lo crea.
+
+
+>Funciones Entrada/Salida de texto
+
+* Entrada/Salida de caracteres: 
+
+
+    `fgetc()` Lee 1 carácter 
+
+    `fputc()` Escribe 1 carácter
+ 
+* Entrada/Salida de cadenas: 
+
+    `fgets()` Lee 1 línea 
+
+    `fputs()` Escribe 1 línea 
+
+* Entrada/Salida con formato: 
+
+    `fscanf()` Lee con formato 
+    
+    `fprintf()` Escribe con formato
 
 
 
+## Archivos Binarios
 
+Los archivos binarios almacenan datos numéricos en un formato que las computadoras pueden entender directamente. Esto incluye imágenes, audio, programas y otros tipos de datos. Los archivos binarios están codificados en un lenguaje de máquina que solo las computadoras pueden interpretar. Esta característica los hace más eficientes para almacenar y procesar grandes cantidades de datos numéricos.
 
+>Modos de apertura en archivos binarios
 
+`rb` : Apertura en modo sólo lectura, el archivo debe existir
 
+`wb` : Apertura en modo escritura, si el archivo existe se sobreescribe y pierde el contenido anterior. Si no existe lo crea. 
 
+`ab`  : Apertura en modo agregar, si el archivo existe agrega los datos al final del archivo, si no existe lo crea.
 
+`rb+ ó r+b` : Apertura en modo lectura / escritura, el archivo debe existir.
 
+`wb+ ó w+b` : Apertura en modo lectura / escritura, el archivo debe existir, si el archivo existe se sobrescribe y pierde el contenido anterior. Si no existe lo crea.
 
-
-
-
-
+`ab+ ó a+b`  : Apertura en modo lectura / agregar, si el archivo existe agrega los datos al final del archivo, si no existe lo crea.
 
 
 

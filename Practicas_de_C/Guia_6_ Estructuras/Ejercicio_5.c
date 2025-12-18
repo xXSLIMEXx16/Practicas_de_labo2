@@ -36,6 +36,7 @@ int main()
             seguir = 0;
         }
     
+        getchar();
     } while (seguir);
      
 
@@ -51,7 +52,6 @@ int main()
 
 void agregar_datos(struct persona alumno[], int *tamano){
 
-    fflush(stdin);
 
     printf("Ingrese su nombre: ");
     fgets(alumno[*tamano].nombre, sizeof(alumno[*tamano].nombre), stdin);

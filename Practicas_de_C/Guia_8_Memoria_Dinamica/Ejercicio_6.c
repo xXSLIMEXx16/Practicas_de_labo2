@@ -6,31 +6,49 @@ vector original.*/
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 int main()
 {
-    int *vector = NULL;
-    int *aux = NULL;
-    int n;
+    char *vector = NULL;
+    char *aux = NULL;
+    int n = 10;
+    int c;
 
-    vector = (int*)malloc(1 * sizeof(int));
-    vector[0] = 1;
-    vector[1] = 1;
-    vector[2] = 1;
-
-    printf("Ingrese el taamaño del vector: ");
-    scanf("%d",&n);
-
-    aux = (int*)realloc(vector , n * sizeof(int));
-
-    if (aux == NULL) {
+    vector = malloc(n * sizeof(char));
+    if (vector == NULL) {
         printf("Error al asignar memoria\n");
-        return 0;
+        return 1;
+    }
+
+    printf("Ingrese algo en el vector: ");
+    fgets(vector, n, stdin);
+    vector[strcspn(vector, "\n")] = '\0';
+
+    printf("Contenido: %s\n", vector);
+
+    while ((c = getchar()) != '\n' && c != EOF);
+
+    printf("Ingrese el nuevo tamaño del vector: ");
+    scanf("%d", &n);
+    
+
+    aux = realloc(vector, n * sizeof(char));
+    if (aux == NULL) {
+        printf("Error al redimensionar memoria\n");
+        free(vector);
+        return 1;
     }
 
     vector = aux;
+    while ((c = getchar()) != '\n' && c != EOF);
 
+    printf("Ingrese algo en el vector: ");
+    fgets(vector, n, stdin);
+    vector[strcspn(vector, "\n")] = '\0';
 
+    printf("Contenido final: %s\n", vector);
 
+    free(vector);
     return 0;
 }

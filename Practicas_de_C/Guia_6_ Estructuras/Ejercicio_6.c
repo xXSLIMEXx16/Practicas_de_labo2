@@ -39,9 +39,11 @@ int main()
         switch (op)
         {
         case 1:
+            getchar();
             agregar_datos(alumno, &tamano);
             break;
         case 2:
+            getchar();
             eliminar_datos(alumno, &tamano);
             break;
         case 3:
@@ -67,7 +69,6 @@ int main()
 
 void agregar_datos(struct persona alumno[], int *tamano){
 
-    fflush(stdin);
 
     printf("Ingrese su nombre: ");
     fgets(alumno[*tamano].nombre, sizeof(alumno[*tamano].nombre), stdin);
@@ -107,7 +108,6 @@ void imprimir_datos(struct persona alumno[], int tamano){
 
 void eliminar_datos(struct persona alumno[], int *tamano){
 
-    fflush(stdin);
 
     char nombre[50];
     printf("Ingrese el nombre de la persona que quiere eliminar: ");
