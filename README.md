@@ -838,8 +838,23 @@ Los archivos binarios almacenan datos numéricos en un formato que las computado
 
 `ab+ ó a+b`  : Apertura en modo lectura / agregar, si el archivo existe agrega los datos al final del archivo, si no existe lo crea.
 
+>Modos de búsqueda fseek()
 
+* `SEEK_SET`: Este modo mueve el puntero de posición al principio del archivo. Cuando se utiliza fseek(file_pointer, offset, SEEK_SET), el puntero se desplazará offset bytes desde el inicio del archivo.
 
+* `SEEK_CUR`: Este modo mueve el puntero de posición a una ubicación determinada relativa a su posición actual. Cuando se utiliza fseek(file_pointer, offset, SEEK_CUR), el puntero se desplazará offset bytes desde su posición actual.
+
+* `SEEK_END`: Este modo mueve el puntero de posición al final del archivo. Cuando se utiliza fseek(file_pointer, offset, SEEK_END), el puntero se desplazará offset bytes desde el final del archivo.
+
+>Fread() y Fwrite()
+
+Tanto a `fread()` como `fwrite()` tenemos que pasarle, además de otros parámetros, el tamaño del tipo de datos en bytes, para ello utilizamos el operador sizeof.
+
+    FILE *archivo;
+
+    fread(&numero_leido, sizeof(int), 1, archivo);
+
+    fwrite(&numero, sizeof(int), 1, archivo);
 
 
 
