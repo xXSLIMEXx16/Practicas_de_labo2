@@ -14,6 +14,8 @@
 * [Estructuras](#ESTRUCTURAS)
 * [Matrices](#MATRICES)
 * [Memoria Dinámica](#MEMORIA-DINÁMICA)
+* [Archivos de texto](#archivos-de-texto)
+* [Archivos binarios](#archivos-binarios)
 
 
 
